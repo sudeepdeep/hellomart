@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grocery Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    *{
+            
+            text-align:center;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right:0px;
+            
+        }
+        .heading{
+            display:block;
+            background-color: black;
+            top: 0;
+            left: 0;
+            padding: 20px;
+          
+            width: 100%;    
+        }
+        .heading h1{
+            color:white;
+            font-family: 'Permanent Marker', cursive;
+            text-decoration: line-through;
+            text-decoration-color: black;
+            font-size: 50px;
+        }
+        .heading p{
+            color:#f03948;
+            font-family: Quicksand;
+        }
+
+
+    .nav-bar{
+        background-color:  #e3e3e3;
+        position: sticky;
+        top: 0px;
+
+    }
+    .nav-bar ul{
+      
+        display:flex;
+        padding: 35px;
+        justify-content: space-around;
+    }
+    .nav-bar ul li{
+        list-style-type: none;
+        cursor: pointer;
+        font-family: Quicksand
+    }
+
+
+    .nav-bar ul li:hover{
+        color: #f03948;
+       
+    }
+    .form-details{
+    font-family: Quicksand;
+    margin-top: 10%;
+
+}
+nav a{
+    text-decoration:none;
+    color:black;
+}
+nav a:hover{
+    color: #f03948;
+}
+
+.form-details button{
+    width: 120px;
+    height:30px;
+    background-color: black;
+    color: white;
+    border-radius:50px;
+    border: 0px;
+    margin-left: 20px;
+}
+.contact{
+    max-width: 400px;
+ 
+}
+.contact p{
+    font-size: 1em;
+}
+.contact span{
+    font-size: 1.5em;
+}
+.container{
+    max-width: 400px;
+    margin-top: 20px;
+
+}
+.filtered{
+    display: none;
+}
+img{
+    border-radius: 25px;
+}
+</style>
+<body>
+    
+    <div class="heading">
+        <h1>SrinivasaRao Kirana</h1>
+        <p>An All-In-One Place :)</p>
+    </div>
+    <nav class = "nav-bar">
+        <ul>
+            <li class = "home"><a href = "index.html">Home</a></li>
+            <li><a href = "products.html">Products</a></li>
+            <li><a href = "contact.html">Contact Us</a></li>
+            <li><a href = "form.html">Cart</a></li>
+        </ul>
+    </nav>
+    <form class = "form mx-auto">
+        <input type = "search" placeholder = "Search your Items">
+    <div class = "container bg-light shadow-lg ">
+        <div class="card1 mx-auto my-40" style="width: 18rem;">
+            <img src="tomato.jpg" class="card-img-top shadow-lg" alt="..." width="200px" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">Tomato</h5>
+              <p class="card-text">
+                  <table class="table mx-auto">
+                   <tr>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                   </tr>
+                   <tr>
+                    <td>250 gms</td>
+                    <td>50/- rs</td>
+                   </tr>
+                   <tr>
+                    <td>500 gms</td>
+                    <td>100/- rs</td>
+                   </tr>
+                  </table>
+                  
+              </p>
+            </div>
+          </div>
+        
+        
+          <div class="card2 mx-auto my-40" style="width: 18rem;">
+            <img src="potato.jpg" class="card-img-top shadow-lg" alt="..." width="200px" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">potato</h5>
+              <p class="card-text">
+                <table class="table mx-auto">
+                    <tr>
+                     <td>Quantity</td>
+                     <td>Price</td>
+                    </tr>
+                    <tr>
+                     <td>250 gms</td>
+                     <td>50/- rs</td>
+                    </tr>
+                    <tr>
+                     <td>500 gms</td>
+                     <td>100/- rs</td>
+                    </tr>
+                   </table>
+              </p>
+              
+            </div>
+          </div>
+        
+          <div class="card3 mx-auto my-40" style="width: 18rem;">
+            <img src="capcicum.jpg" class="card-img-top shadow-lg" alt="..." width="200px" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">capcicum</h5>
+              <p class="card-text">
+                <table class="table mx-auto">
+                    <tr>
+                     <td>Quantity</td>
+                     <td>Price</td>
+                    </tr>
+                    <tr>
+                     <td>250 gms</td>
+                     <td>50/- rs</td>
+                    </tr>
+                    <tr>
+                     <td>500 gms</td>
+                     <td>100/- rs</td>
+                    </tr>
+                   </table>
+              </p>
+              
+            </div>
+          </div>
+        
+        
+          <div class="card4 mx-auto my-40" style="width: 18rem;">
+            <img src="spinach.jpg" class="card-img-top shadow-lg" alt="..." width="200px" height="220px">
+            <div class="card-body">
+              <h5 class="card-title">spinach</h5>
+              <p class="card-text">
+                <table class="table mx-auto">
+                    <tr>
+                     <td>Quantity</td>
+                     <td>Price</td>
+                    </tr>
+                    <tr>
+                     <td>5 bunches</td>
+                     <td>50/- rs</td>
+                    </tr>
+                    <tr>
+                     <td>10 bunches</td>
+                     <td>100/- rs</td>
+                    </tr>
+                   </table>
+              </p>
+              
+            </div>
+          </div>
+        
+        </div>
+</form>
+<script src= "sandbox2.js"></script>
+</body>
+</html>
